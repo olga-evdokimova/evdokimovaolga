@@ -1,6 +1,8 @@
-import './globals.scss'
-import type { Metadata } from 'next'
-import { Montserrat, Roboto} from "next/font/google";
+import "./globals.scss";
+import type { Metadata } from "next";
+import { Montserrat, Roboto } from "next/font/google";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 
 export const montserrat = Montserrat({
   subsets: ["cyrillic"],
@@ -20,11 +22,17 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en" >
-      <body className={montserrat.className}>{children}</body>
+    <html lang="en">
+      <body className={montserrat.className}>
+        <div className="wrapper">
+          <Header />
+          {children}
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }

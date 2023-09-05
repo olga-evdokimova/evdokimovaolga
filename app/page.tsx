@@ -1,13 +1,10 @@
-import Image from "next/image";
+import Title from "./components/Ttile";
+
 
 export default function Home() {
   return (
-    <main>
-      <div className="text">
-        Привет, меня зовут Ольга!<br></br>
-        Здесь скоро появится мой личный сайт!<br></br>
-        Спасибо, что заглянули!
-      </div>
-    </main>
+      <main>
+        <Title tag="h1" text="Привет, меня зовут Ольга!" />
+      </main>
   );
 }
