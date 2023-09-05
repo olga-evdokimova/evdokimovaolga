@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <main>
       <Title tag="h1" text="Привет, меня зовут Ольга!" />
+     
     </main>
   );
 }

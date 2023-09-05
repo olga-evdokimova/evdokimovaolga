@@ -1,0 +1,46 @@
+.button-order {
+    position: fixed;
+    z-index: 100;
+    background-color: #2136d1;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    width: 200px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    &:hover{
+        background-color: #6095ff;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            117deg,
+            rgba(63, 94, 251, 0) 19%,
+            rgba(255, 255, 255, 0.9864320728291317) 46%,
+            rgba(255, 255, 255, 0.8855917366946778) 48%,
+            rgba(252, 70, 107, 0) 76%
+        );
+        animation: shine 2s infinite;
+    }
+    @media (max-width: 992px) {
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 200%;
+    }
+}

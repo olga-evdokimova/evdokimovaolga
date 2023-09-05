@@ -1,10 +1,13 @@
-import Title from "../Ttile";
 import "./Header.scss";
+// import Logo from "../Logo/Logo";
+// import Nav from "components/Nav/Nav";
 
-export default function Header() {
+export default function Header () {
   return (
-    <header>
-      <Title tag="h3" text="Это header" />
+    <header className="header container">
+      {/* <Logo></Logo>
+      <Nav></Nav> */}
     </header>
   );
-}
+};
+
