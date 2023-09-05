@@ -1,18 +1,19 @@
 "use client";
 import Link from "next/link";
 import m from "./Nav.module.scss";
-// import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
-
-const Nav = () => {
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+export default function Nav() {
   const [nav, setNav] = useState(false);
   const toggleActive = () => {
     setNav(!nav);
   };
-
   return (
     <nav className={m.nav}>
       <ul className={nav ? [m.nav_menu, m.active_menu].join(" ") : m.nav_menu}>
+        <li onClick={toggleActive}>
+          <Link href="/">Главная</Link>
+        </li>
         <li onClick={toggleActive}>
           <Link href="/about">Обо мне</Link>
         </li>
@@ -24,9 +25,9 @@ const Nav = () => {
         </li>
       </ul>
       <div onClick={toggleActive} className={m.icon_menu}>
-        {/* {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />} */}
+        {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
       </div>
     </nav>
   );
-};
-export default Nav;
+}
+
