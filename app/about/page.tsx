@@ -1,5 +1,5 @@
 import Title from "../components/Ttile";
-
+import "./style.scss"
 export default function About() {
   return (
     <main>

@@ -1,4 +1,5 @@
 import "./globals.scss";
+import "./null.scss";
 import type { Metadata } from "next";
 import { Montserrat, Roboto } from "next/font/google";
 import Header from "./components/header/Header";

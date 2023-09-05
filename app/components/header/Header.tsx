@@ -1,5 +1,6 @@
 import Title from "../Ttile";
 import "./Header.scss";
+
 export default function Header() {
   return (
     <header>
