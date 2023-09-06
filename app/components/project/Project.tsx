@@ -1,9 +1,10 @@
 import module from "./Project.module.scss";
 import Link from "next/link";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-type ProjectProps ={
-  img: string;
+type ProjectProps = {
+  id: number;
+  img: StaticImageData;
   title: string;
   text: string;
   href: string;
