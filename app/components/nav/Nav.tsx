@@ -3,6 +3,7 @@ import Link from "next/link";
 import m from "./Nav.module.scss";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+
 export default function Nav() {
   const [nav, setNav] = useState(false);
   const toggleActive = () => {
