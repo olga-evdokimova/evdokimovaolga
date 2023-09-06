@@ -1,7 +1,7 @@
-import React from "react";
+
 import "./Post.scss";
 
-const Post = () => {
+export default function Post () {
   return (
     <div className="post">
       <span className="post__data">10 февраля 2023</span>
@@ -30,4 +30,4 @@ const Post = () => {
     </div>
   );
 };
-export default Post;
+
