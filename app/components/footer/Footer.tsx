@@ -6,8 +6,8 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__inner container">
-        <Logo></Logo>
-        <Social></Social>
+        <Logo isWhite={true}/>
+        <Social/>
       </div>
       <div className="footer__copy">
         <span>© 2023</span>

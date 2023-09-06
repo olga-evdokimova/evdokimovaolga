@@ -2,7 +2,13 @@ import module from "./Project.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Project(props) {
+type ProjectProps ={
+  img: string;
+  title: string;
+  text: string;
+  href: string;
+}
+export default function Project(props:ProjectProps) {
   const link = props.href.startsWith("http");
 
   return (
