@@ -1,6 +1,7 @@
 import "./Footer.scss";
 import Logo from "../logo/Logo";
-import Social from "../Social/Social";
+import Social from "../social/Social";
+
 export default function Footer() {
   return (
     <footer className="footer">

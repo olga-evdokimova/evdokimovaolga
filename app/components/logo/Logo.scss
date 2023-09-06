@@ -5,56 +5,52 @@
     &__link {
         display: flex;
         align-items: center;
-        padding: 5px 0;
+        padding: 10px 0;
         color: #222;
         img {
             max-width: 100%;
-            width: 80px;
-            height: 80px;
-             @media (max-width: 600px) {
+            width: 60px;
+            height: 60px;
+            padding: 5px;
+            @media (max-width: 600px) {
                 width: 40px;
                 height: 40px;
-             }
+            }
         }
     }
     &__text {
-        padding-left: 20px;
-        font-size: 24px;
+        padding-left: 10px;
+        font-size: 18px;
         line-height: 0.2;
-        display: flex;
-        align-items: center;
-        height: 50px;
         @media (max-width: 1200px) {
             font-size: calc(15px + (24 - 15) * ((100vw - 320px) / (1200 - 320)));
         }
         @media (max-width: 992px) {
-            flex-wrap: wrap;
-            padding-left: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: flex-start;
+          
+         
         }
-        // span {
-        //     font-size: 18px;
-        //     @media (max-width: 1200px) {
-        //         font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1200 - 320)));
-        //     }
-        //     @media (max-width: 992px) {
-        //         font-weight: normal;
-        //         display: flex;
-        //         margin-bottom: 5px;
-        //     }
-        //     // &::before {
-        //     //     content: "|";
-        //     //     font-size: 25px;
-        //     //     padding-left: 10px;
-        //     //     padding-right: 10px;
-        //     //     @media (max-width: 992px) {
-        //     //         padding: 0;
-        //     //         content: "";
-        //     //     }
-        //     // }
-        // }
+        span {
+            display: block;
+            font-size: 14px;
+            padding-top: 20px;
+            @media (max-width: 1200px) {
+                font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1200 - 320)));
+            }
+            @media (max-width: 992px) {
+                font-weight: normal;
+                display: flex;
+                margin-bottom: 5px;
+            }
+            // &::before {
+            //     content: "|";
+            //     font-size: 25px;
+            //     padding-left: 10px;
+            //     padding-right: 10px;
+            //     @media (max-width: 992px) {
+            //         padding: 0;
+            //         content: "";
+            //     }
+            // }
+        }
     }
 }

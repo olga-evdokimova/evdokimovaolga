@@ -1,4 +1,3 @@
-
 import image1 from "./img/1.jpg";
 import image2 from "./img/4-4.jpg";
 import image3 from "./img/2.jpg";
@@ -63,12 +62,14 @@ let postElements = postData.map((element, key) => (
     href={element.href}
   />
 ));
-
+import logo from "./img/1 (1).jpg";
 export default function Home() {
   return (
     <main>
-      <Title tag="h1" text="мои проекты" />
-      {postElements}
+      <div className="container">
+        <Title tag="h1" text="мои проекты" />
+        {postElements}
+      </div>
     </main>
   );
 }
