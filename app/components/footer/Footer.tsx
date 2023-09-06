@@ -1,13 +1,13 @@
 import "./Footer.scss";
 import Logo from "../logo/Logo";
-import Social from "../social/Social";
+// import Social from "../social/Social";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__inner container">
         <Logo isWhite={true}/>
-        <Social/>
+        {/* <Social/> */}
       </div>
       <div className="footer__copy">
         <span>© 2023</span>
