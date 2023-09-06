@@ -1,5 +1,5 @@
 
-import "./Social.scss";
+import "./social.scss";
 
 
 export default function Social () {
