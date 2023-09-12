@@ -68,7 +68,7 @@ export default function Home() {
     <main>
       <div className="container">
         <Title tag="h1" text="мои проекты" />
-        {postElements}
+        <div className="home">{postElements}</div>
       </div>
     </main>
   );

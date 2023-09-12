@@ -1,7 +1,7 @@
 
-import "./Post.scss";
+import "./BlogPost.scss"
 
-export default function Post () {
+export default function BlogPost () {
   return (
     <div className="post">
       <span className="post__data">10 февраля 2023</span>
@@ -11,7 +11,6 @@ export default function Post () {
       <div className="post__image">
         <img src="https://i.ibb.co/CBdLzQF/Instagram-post-6.jpg" alt="" />
       </div>
-
       <a href="#" className="post__link">
         Читать пост
         <svg
