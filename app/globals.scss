@@ -22,10 +22,10 @@
   color: #9b9997;
 }
 h1 {
-  font-size: 130px;
-  font-weight: bold;
+  font-size: 100px;
+  font-weight: 600;
   text-transform: uppercase;
-  padding: 60px 0px 60px;
+  padding: 70px 0px 110px;
   text-align: center;
   @media (max-width: 1200px) {
     font-size: calc(30px + (130 - 30) * ((100vw - 320px) / (1200 - 320)));

@@ -1,17 +1,13 @@
 import "./globals.scss";
 import "./null.scss";
 import type { Metadata } from "next";
-import { Montserrat, Roboto } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Button from "./components/button/Button";
 
 export const montserrat = Montserrat({
-  subsets: ["cyrillic"],
-  display: "swap",
-});
-export const roboto = Roboto({
-  weight: ["400", "700"],
+  weight: ["400", "500", "600", "700"],
   subsets: ["cyrillic"],
   display: "swap",
 });

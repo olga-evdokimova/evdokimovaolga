@@ -1,4 +1,4 @@
-import module from "./Project.module.scss";
+import "./Project.scss";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 
@@ -14,17 +14,17 @@ export default function Project(props:ProjectProps) {
 
   return (
    
-      <div className={module.post}>
-        <div className={module.post__filter}></div>
-        <div className={module.post__img}>
+      <div className="post">
+        <div className="post__filter"></div>
+        <div className="post__img">
           <Image src={props.img} alt="" />
         </div>
         <div className="container">
-          <div className={module.post__wrap}>
+          <div className="post__wrap">
             {link ? (
               <a
                 href={props.href}
-                className={module.post__title}
+                className="post__title"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -32,11 +32,10 @@ export default function Project(props:ProjectProps) {
               </a>
             ) : (
               <Link href={props.href}>
-                <div className={module.post__title}>{props.title}</div>
+                <div className="post__title">{props.title}</div>
               </Link>
             )}
-
-            <div className={module.post__text}>{props.text}</div>
+            <div className="post__text">{props.text}</div>
           </div>
         </div>
       </div>
