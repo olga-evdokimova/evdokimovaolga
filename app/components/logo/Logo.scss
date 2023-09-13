@@ -19,8 +19,9 @@
         }
     }
     &__text {
-        padding-left: 10px;
+        // padding-left: 10px;
         font-size: 18px;
+        font-weight: 700;
         line-height: 0.2;
         @media (max-width: 1200px) {
             font-size: calc(15px + (24 - 15) * ((100vw - 320px) / (1200 - 320)));
