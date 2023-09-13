@@ -1,0 +1,28 @@
+.scroll-to-top {
+    display: block;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    cursor: pointer;
+    z-index: 20;
+    @media (max-width: 992px){
+        width: 40px;
+        height: 40px;
+    }
+    svg{
+        width: 25px;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        fill: #222222;
+        @media (max-width: 992px){
+            width: 20px;
+        }
+    }
+}

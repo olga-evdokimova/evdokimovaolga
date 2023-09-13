@@ -6,6 +6,7 @@ import { Montserrat } from "next/font/google";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Button from "./components/button/Button";
+import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 
 export const montserrat = Montserrat({
   weight: ["400", "500", "600", "700"],
@@ -31,6 +32,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <Button />
+        <ScrollToTopButton/>  
         </div>
       </body>
     </html>

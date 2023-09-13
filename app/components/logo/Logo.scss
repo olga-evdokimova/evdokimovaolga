@@ -5,7 +5,7 @@
     &__link {
         display: flex;
         align-items: center;
-        padding: 10px 0;
+        // padding: 10px 0;
         color: #222;
         img {
             max-width: 100%;
@@ -19,39 +19,11 @@
         }
     }
     &__text {
-        // padding-left: 10px;
-        font-size: 18px;
+        font-size: clamp(15px, 15px + (24 - 15) * ((100vw - 320px) / (1358 - 320)), 24px);
         font-weight: 700;
-        line-height: 0.2;
-        @media (max-width: 1200px) {
-            font-size: calc(15px + (24 - 15) * ((100vw - 320px) / (1200 - 320)));
-        }
-        @media (max-width: 992px) {
-          
-         
-        }
         span {
             display: block;
-            font-size: 14px;
-            padding-top: 20px;
-            @media (max-width: 1200px) {
-                font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1200 - 320)));
-            }
-            @media (max-width: 992px) {
-                font-weight: normal;
-                display: flex;
-                margin-bottom: 5px;
-            }
-            // &::before {
-            //     content: "|";
-            //     font-size: 25px;
-            //     padding-left: 10px;
-            //     padding-right: 10px;
-            //     @media (max-width: 992px) {
-            //         padding: 0;
-            //         content: "";
-            //     }
-            // }
+            font-size: clamp(12px, 12px + (14 - 12) * ((100vw - 320px) / (1358 - 320)), 14px);
         }
     }
 }
