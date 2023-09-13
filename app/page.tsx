@@ -38,14 +38,14 @@ export default function Home() {
       id: 5,
       title: "Пресс-центр",
       img: "project-05.jpg",
-      text: "Шаблон пресс-центра для корпоративного блога.",
+      text: "Шаблон главной страницы пресс-центра.",
       href: "https://olga-evdokimova.github.io/blog-Press/",
     },
     {
       id: 6,
       title: "Корпоративный блог",
       img: "project-06.jpg",
-      text: "Шаблон для корпоративного блога.",
+      text: "Шаблон главной страницы корпоративного блога.",
       href: "https://olga-evdokimova.github.io/blog-Corporate/",
     },
   ];

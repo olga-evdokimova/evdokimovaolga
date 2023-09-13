@@ -3,9 +3,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     padding-bottom: 150px;
-    @media (max-width: 767px) {
+    @media (max-width: 992px) {
         grid-template-columns: repeat(1, 1fr);
         gap: 15px;
+          padding-bottom: 80px;
     }
     &__wrapper {
         position: relative;
@@ -35,7 +36,7 @@
         border-radius: 9px;
         overflow: hidden;
         @media (max-width: 992px) {
-            height: calc(250px + (376 - 250) * ((100vw - 390px) / (992 - 390)));
+            height: calc(250px + (476 - 250) * ((100vw - 390px) / (992 - 390)));
         }
         &:before {
             content: " ";
