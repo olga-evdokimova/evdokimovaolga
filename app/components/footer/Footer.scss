@@ -1,62 +1,63 @@
 .footer {
     background-color: #202020;
     width: 100%;
-    padding: 30px 0;
-    &__inner {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        @media (max-width: 992px) {
-            flex-direction: column;
-            align-items: center;
+    padding: 60px 0;
+    .nav {
+        &__menu {
+            justify-content: center;
+
+            li {
+                // color: #fff;
+                font-weight: 500;
+                padding: 15px;
+                @media (min-width: 992px){
+                       color: #fff;
+                }
+            }
         }
+    }
+    .social {
+        justify-content: center;
     }
 
     &__copy {
         color: #fff;
+        font-weight: 500;
+        font-size: 20px;
         text-align: center;
-        padding-top: 20px;
-        a {
-            padding-left: 10px;
-        }
-        @media (max-width: 992px) {
-            padding-bottom: 60px;
-        }
-        @media (max-width: 600px) {
-            a {
-                white-space: nowrap;
-                display: block;
-                padding-top: 5px;
-            }
-            span:before {
-                display: none;
-            }
+        padding-top: 10px;
+        @media (max-width: 480px) {
+            font-size: 14px;
         }
         span {
             position: relative;
-            padding-right: 20px;
-            &::before {
-                content: "|";
-                width: 10px;
-                position: absolute;
-                top: 0px;
-                right: 0;
+            &:first-child {
+                padding-right: 10px;
+                &::before {
+                    content: "|";
+                    width: 2px;
+                    position: absolute;
+                    top: 0px;
+                    right: 0;
+                }
+            }
+            &:last-child {
+                padding-left: 10px;
             }
         }
     }
-    h2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        color: #fff;
-    }
-    .logo {
-        align-items: flex-start;
-    }
-    .logo__link {
-        color: #fff;
-        padding-bottom: 20px;
-    }
-  
+    // h2 {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     height: 100%;
+    //     color: #fff;
+    // }
+    // .logo {
+    //     align-items: flex-start;
+    // }
+    // .logo__link {
+    //     color: #fff;
+    //     padding-bottom: 20px;
+    // }
 }

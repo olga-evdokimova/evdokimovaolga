@@ -11,7 +11,7 @@ export default function Nav() {
   };
   return (
     <nav className="nav">
-      <ul className={nav ? ["nav_menu", "active_menu"].join(" ") : "nav_menu"}>
+      <ul className={nav ? ["nav__menu", "active_menu"].join(" ") : "nav__menu"}>
         <li onClick={toggleActive}>
           <Link href="/">Главная</Link>
         </li>
