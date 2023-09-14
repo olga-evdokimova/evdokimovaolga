@@ -1,12 +1,8 @@
 .social {
-    font-size: 18px;
-    color: #fff;
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
     &__item {
         padding: 10px;
-        display: inline-flex;
-        align-items: center;
         &:hover svg {
             transform: scale(1.1);
             transition: all 0.5s ease 0s;

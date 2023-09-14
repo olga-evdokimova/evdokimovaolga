@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container">
         {/* <Logo isWhite={true}/> */}
-        <Social />
+        <Social/>
         <Nav/>  
       </div>
       <div className="footer__copy">
