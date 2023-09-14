@@ -7,21 +7,15 @@
         padding: 10px;
         display: inline-flex;
         align-items: center;
-        @media (any-hover: hover) and (any-pointer: fine) {
-            &:hover {
-                color: #9b9997;
-                transition: all 0.5s ease 0s;
-            }
-            &:hover svg {
-                fill: #9b9997;
-                transition: all 0.5s ease 0s;
-            }
+        &:hover svg {
+            transform: scale(1.1);
+            transition: all 0.5s ease 0s;
         }
         svg {
             width: 30px;
             height: 30px;
-            // margin-right: 20px;
             fill: #fff;
+            transition: all 0.5s ease 0s;
         }
     }
 }
