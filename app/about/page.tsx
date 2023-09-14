@@ -1,7 +1,7 @@
 import "./style.scss";
 import Title from "../components/Ttile";
 import Image from "next/image";
-
+import Test from "../components/Test/Test";
 export default function About() {
   return (
     <main>
@@ -12,26 +12,23 @@ export default function About() {
             <div className="about__img">
               <Image
                 src="about.jpg"
-                alt=""
-                fill
-                sizes="426px"
-                style={{ borderRadius: "9px", objectFit: "cover" }}
+                alt="Картинка"
+                width={426}
+                height={513}
               />
             </div>
-            <div className="about__text">
-              <p>
-                Я&nbsp;&mdash; фронтенд-разработчик, специализируюсь
-                на&nbsp;создании сайтов. Разрабатываю различные типы сайтов,
-                включая многостраничники, лендинги, визитки, портфолио
-                и&nbsp;многое другое. Также имею опыт в&nbsp;доработке уже
-                готовых сайтов и&nbsp;обеспечении их&nbsp;технической поддержки.
-              </p>
-              <p>
-                Мои навыки и&nbsp;работа с&nbsp;командой позволяют создавать
-                сайты &laquo;под ключ&raquo;, от&nbsp;идеи до&nbsp;запуска,
-                а&nbsp;также обеспечивать их&nbsp;дальнейшее функционирование.
-              </p>
-            </div>
+            <p>
+              Я&nbsp;&mdash; фронтенд-разработчик, специализируюсь
+              на&nbsp;создании сайтов. Разрабатываю различные типы сайтов,
+              включая многостраничники, лендинги, визитки, портфолио
+              и&nbsp;многое другое. Также имею опыт в&nbsp;доработке уже готовых
+              сайтов и&nbsp;обеспечении их&nbsp;технической поддержки.
+            </p>
+            <p>
+              Мои навыки и&nbsp;работа с&nbsp;командой позволяют создавать сайты
+              &laquo;под ключ&raquo;, от&nbsp;идеи до&nbsp;запуска, а&nbsp;также
+              обеспечивать их&nbsp;дальнейшее функционирование.
+            </p>
           </div>
           <div className="about__list">
             <h4 className="about__list-title">Мои услуги:</h4>

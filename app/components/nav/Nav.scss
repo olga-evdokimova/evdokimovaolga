@@ -15,7 +15,7 @@
             height: 100vh;
             background-color: #f8f8f8;
             z-index: 101;
-            transition: right 0.8s;
+            transition: right .5s .5s;
         }
         li {
             font-weight: 400;
@@ -59,4 +59,5 @@
 }
 .active_menu {
     right: 0;
+    transition: right .5s 0s;
 }
