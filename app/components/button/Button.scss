@@ -1,18 +1,18 @@
 .button-order {
     position: fixed;
     z-index: 99;
-    background-color: #d3d3d3;
+    background-color: #202020;
     bottom: 15px;
     right: 15px;
     padding: 15px 20px;
     border-radius: 9px;
-    color: #222222;
+    color: #ffffff;
     font-size: 20px;
     font-weight: bold;
     overflow: hidden;
     transition: all 0.5s ease;
     &:hover {
-        background-color: #565656;
+        background-color: #de1414;
         color: #fff;
         transition: all 0.5s ease;
     }

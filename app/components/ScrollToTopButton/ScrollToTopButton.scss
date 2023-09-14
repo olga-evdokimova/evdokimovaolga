@@ -7,7 +7,7 @@
     height: 55px;
     border: none;
     border-radius: 50%;
-    background-color: #d3d3d3;
+    background-color: #202020;
     cursor: pointer;
     z-index: 20;
     @media (max-width: 992px){
@@ -20,7 +20,7 @@
         position: absolute;
         top: 25%;
         left: 25%;
-        fill: #222222;
+        fill: #fff;
         @media (max-width: 992px){
             width: 20px;
         }

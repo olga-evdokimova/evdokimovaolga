@@ -4,7 +4,7 @@ import Image from "next/image";
 import Test from "../components/Test/Test";
 export default function About() {
   return (
-    <main>
+  
       <div className="container2">
         <Title tag="h1" text="Обо мне" />
         <section className="about">
@@ -65,6 +65,6 @@ export default function About() {
           </div>
         </section>
       </div>
-    </main>
+ 
   );
 }

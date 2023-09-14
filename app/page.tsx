@@ -50,7 +50,7 @@ export default function Home() {
     },
   ];
   return (
-    <main>
+
       <div className="container">
         <Title tag="h1" text="мои проекты" />
         <div className="project">
@@ -81,6 +81,6 @@ export default function Home() {
           ))}
         </div>
       </div>
-    </main>
+  
   );
 }

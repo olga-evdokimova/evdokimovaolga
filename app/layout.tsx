@@ -1,6 +1,6 @@
 import "./globals.scss";
 import "./null.scss";
-import "./style.scss"
+import "./style.scss";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import Header from "./components/header/Header";
@@ -28,11 +28,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <div className="wrapper">
-          <Header />
-          {children}
-          <Footer />
-          <Button />
-        <ScrollToTopButton/>  
+          <main>
+            <Header />
+            {children}
+            <Footer />
+              <Button />
+              <ScrollToTopButton />
+          </main>
         </div>
       </body>
     </html>
