@@ -1,0 +1,29 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__link {
+        display: flex;
+        align-items: center;
+        // padding: 10px 0;
+        color: #222;
+        img {
+            max-width: 100%;
+            width: 60px;
+            height: 60px;
+            padding: 5px;
+            @media (max-width: 600px) {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    &__text {
+        font-size: clamp(15px, 15px + (24 - 15) * ((100vw - 320px) / (1358 - 320)), 24px);
+        font-weight: 700;
+        span {
+            display: block;
+            font-size: clamp(12px, 12px + (14 - 12) * ((100vw - 320px) / (1358 - 320)), 14px);
+        }
+    }
+}
