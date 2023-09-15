@@ -1,7 +1,7 @@
 import "./style.scss";
 import Title from "../components/Ttile";
 import Image from "next/image";
-import Test from "../components/Test/Test";
+// import Test from "../components/Test/Test";
 export default function About() {
   return (
   
