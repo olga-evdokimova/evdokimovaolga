@@ -34,3 +34,119 @@ h1 {
   padding-top: clamp(50px, 50px + (70 - 50) * ((100vw - 390px) / (1358 - 390)), 70px);
   padding-bottom: clamp(40px, 40px + (110 - 40) * ((100vw - 390px) / (1358 - 390)), 110px);
 }
+// Страница 404 =============================
+.not-found {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  height: calc(100vh - 80px - 262px);
+  @media (max-width: 992px) {
+    height: calc(100vh - 60px - 208px);
+  }
+  &__title {
+    font-size: clamp(100px, 100px + (230 - 100) * ((100vw - 390px) / (1358 - 390)), 230px);
+    line-height: 1;
+    color: #202020;
+    animation: glitch 1s linear infinite;
+
+    &:before {
+      content: attr(title);
+      position: absolute;
+      left: 0;
+      color: #202020;
+      z-index: -1;
+      animation: glitchTop 1s linear infinite;
+      clip-path: polygon(0 0, 100% 0, 100% 63%, 0 43%);
+    }
+    &:after {
+      content: attr(title);
+      position: absolute;
+      left: 0;
+      color: #202020;
+      z-index: -1;
+      animation: glitchBotom 1.5s linear infinite;
+      clip-path: polygon(0 57%, 100% 67%, 100% 100%, 0 100%);
+    }
+  }
+  p {
+    font-size: clamp(20px, 20px + (30 - 20) * ((100vw - 390px) / (1358 - 390)), 30px);
+    font-weight: 600;
+    animation: glitch 1s linear infinite;
+    &:before {
+      content: attr(title);
+      position: absolute;
+      left: 0;
+      color: #202020;
+      z-index: -1;
+      animation: glitchTop 1s linear infinite;
+      clip-path: polygon(0 0, 100% 0, 100% 43%, 0 43%);
+    }
+    &:after {
+      content: attr(title);
+      position: absolute;
+      left: 0;
+      color: #202020;
+      z-index: -1;
+      animation: glitchBotom 1.5s linear infinite;
+      clip-path: polygon(0 87%, 100% 67%, 100% 100%, 0 100%);
+    }
+  }
+  a {
+    font-weight: 600;
+    background-color: #e8e8e8;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 9px;
+    transition: all 0.5s ease;
+    animation: glitchBotom 1.5s linear infinite;
+    &:hover {
+      background-color: #202020;
+      color: #fff;
+      transition: all 0.5s ease;
+    }
+    @media (max-width: 992px) {
+      font-size: 16px;
+    }
+  }
+}
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(2px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 1px);
+  }
+  62% {
+    transform: translate(5px, -1px) skew(-6deg);
+  }
+}
+@keyframes glitchBotom {
+  2%,
+  64% {
+    transform: translate(-3px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-3px, 0);
+  }
+  62% {
+    transform: translate(-26px, 8px) skew(31deg);
+  }
+}

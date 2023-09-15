@@ -6,7 +6,7 @@
     @media (max-width: 992px) {
         grid-template-columns: repeat(1, 1fr);
         gap: 15px;
-          padding-bottom: 80px;
+        padding-bottom: 80px;
     }
     &__wrapper {
         position: relative;
@@ -91,3 +91,4 @@
         }
     }
 }
+

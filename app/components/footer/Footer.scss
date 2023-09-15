@@ -5,9 +5,7 @@
     .nav {
         &__menu {
             justify-content: center;
-
             li {
-                // color: #fff;
                 font-weight: 500;
                 padding: 15px;
                 @media (min-width: 992px){
@@ -16,10 +14,7 @@
             }
         }
     }
-    .social {
-        // justify-content: center;
-    }
-
+ 
     &__copy {
         color: #fff;
         font-weight: 500;

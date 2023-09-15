@@ -29,10 +29,12 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <div className="wrapper">
           <Header />
-          <main>{children}</main>
+          <main>
+            {children}
+            <Button />
+            <ScrollToTopButton />
+          </main>
           <Footer />
-          <Button />
-          <ScrollToTopButton />
         </div>
       </body>
     </html>
