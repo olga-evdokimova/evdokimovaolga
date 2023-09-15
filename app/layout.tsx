@@ -3,8 +3,8 @@ import "./null.scss";
 import "./style.scss";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 import Button from "./components/Button/Button";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 
