@@ -1,7 +1,7 @@
 import "./Footer.scss";
 // import Logo from "../logo/Logo";
-import Social from "../Social/Social";
-import Nav from "../Nav/Nav";
+import Social from "../social/Social";
+import Nav from "../nav/Nav";
 
 export default function Footer() {
   return (

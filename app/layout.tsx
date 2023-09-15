@@ -4,10 +4,10 @@ import "./style.scss";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 
-import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
-import Header from "./components/Header/Header";
-import Button from "./components/Button/Button";
-import Footer from "./components/Footer/Footer";
+import ScrollToTopButton from "./components/scrollToTopButton/ScrollToTopButton";
+import Header from "./components/header/Header";
+import Button from "./components/button/Button";
+import Footer from "./components/footer/Footer";
 
 export const montserrat = Montserrat({
   weight: ["400", "500", "600", "700"],
