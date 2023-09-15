@@ -1,6 +1,6 @@
 import "./Footer.scss";
 // import Logo from "../logo/Logo";
-import Social from "../social/Social";
+// import Social from "../social/Social";
 import Nav from "../nav/Nav";
 
 export default function Footer() {
@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container">
         {/* <Logo isWhite={true}/> */}
-        <Social/>
+        {/* <Social/> */}
         <Nav/>  
       </div>
       <div className="footer__copy">
