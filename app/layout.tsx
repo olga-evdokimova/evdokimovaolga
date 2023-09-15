@@ -3,9 +3,9 @@ import "./null.scss";
 import "./style.scss";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
-import Button from "./components/button/Button";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Button from "./components/Button/Button";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 
 export const montserrat = Montserrat({
