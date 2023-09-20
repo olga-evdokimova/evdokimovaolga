@@ -13,7 +13,7 @@ export default function Logo (props:LogoProps) {
       <Link href={"/"} className="logo__link">
         {/* <Image src={props.isWhite ? logoWhite : logoBlack} alt="" /> */}
         <div className="logo__text">
-          Евдокимова&nbsp;Ольга<span>Веб-разработчик</span>
+          Евдокимова&nbsp;Ольга<span>Frontend-разработчик</span>
         </div>
       </Link>
     </div>
