@@ -6,7 +6,7 @@ import { Montserrat } from "next/font/google";
 
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import Header from "./components/Header/Header";
-import Button from "./components/Button/Button";
+// import Button from "./components/Button/Button";
 import Footer from "./components/Footer/Footer";
 
 export const montserrat = Montserrat({
@@ -16,8 +16,10 @@ export const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Olga Evdokimova",
-  description: "Personal website 1",
+  title:
+    "Евдокимова Ольга - Фронтенд-разработчик | Создание сайтов",
+  description:
+    "Я - Евдокимова Ольга, фронтенд-разработчик, специализирующаяся на создании различных типов сайтов, включая многостраничники, лендинги, визитки, портфолио и многое другое. Я имею опыт в доработке уже готовых сайтов и обеспечении их технической поддержки. Мои навыки и работа в команде позволяют мне создавать сайты под ключ - от идеи до запуска, а также обеспечивать их дальнейшее функционирование.",
 };
 
 export default function RootLayout({
@@ -32,7 +34,7 @@ export default function RootLayout({
           <Header />
           <main>
             {children}
-            <Button />
+            {/* <Button /> */}
             <ScrollToTopButton />
           </main>
           <Footer />
