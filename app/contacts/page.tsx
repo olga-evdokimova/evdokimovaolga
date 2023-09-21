@@ -1,11 +1,11 @@
 import Link from "next/link";
-import Title from "../components/Ttile";
+import Title from "../components/Title/Title";
 import Image from "next/image";
 import "./style.scss";
 export default function Contacts() {
   return (
     <section className="contacts container">
-      <Title tag="h1" text="Контакты" />
+      <Title text="Контакты" />
       <div className="contacts__content">
         <ul>
           <li>

@@ -1,0 +1,9 @@
+h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 70px 0px 110px;
+  text-align: center;
+  font-size: clamp(34px, 34px + (100 - 34) * ((100vw - 390px) / (1358 - 390)), 100px);
+  padding-top: clamp(50px, 50px + (70 - 50) * ((100vw - 390px) / (1358 - 390)), 70px);
+  padding-bottom: clamp(40px, 40px + (110 - 40) * ((100vw - 390px) / (1358 - 390)), 110px);
+}

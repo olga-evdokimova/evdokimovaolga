@@ -1,11 +1,11 @@
 import "./style.scss";
-import Title from "../components/Ttile";
+import Title from "../components/Title/Title";
 import Image from "next/image";
 // import Test from "../components/Test/Test";
 export default function About() {
   return (
     <div className="container2">
-      <Title tag="h1" text="Обо мне" />
+      <Title text="Обо мне" />
       <section className="about">
         <div className="about__content">
           <div className="about__img">

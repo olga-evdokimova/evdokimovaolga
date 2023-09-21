@@ -1,5 +1,5 @@
 import "./style.scss";
-import Title from "../components/Ttile";
+import Title from "../components/Title/Title";
 
 import Image from "next/image";
 
@@ -18,8 +18,7 @@ export default function Blog() {
     {
       title: "lfjgljg",
       img: "post-01.jpg",
-      excerpt:
-        "Страница 404 (страница не найдена)",
+      excerpt: "Страница 404 (страница не найдена)",
       href: "#",
       date: "15.09.2023",
       comments: "2",
@@ -27,7 +26,7 @@ export default function Blog() {
   ];
   return (
     <div className="blog container2">
-      <Title tag="h1" text="Блог" />
+      <Title  text="Блог" />
       {/* <h3 className="blog__subtitle">
         Добро пожаловать в мой блог! Здесь вы найдете информацию о моей работе в
         области фронтенд-разработки. Буду рада поделиться с вами своим опытом и
