@@ -5,7 +5,7 @@ import "./style.scss";
 export default function Contacts() {
   return (
     <section className="contacts container">
-      <Title text="Контакты" />
+      <Title>Контакты</Title>
       <div className="contacts__content">
         <ul>
           <li>

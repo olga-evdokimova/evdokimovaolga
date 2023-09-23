@@ -2,31 +2,35 @@ import "./style.scss";
 import Title from "../components/Title/Title";
 
 import Image from "next/image";
+import Link from "next/link";
+import { log } from "console";
 
 export default function Blog() {
   const blogCard = [
     {
+      id: 1,
       title:
         "Эффект глитча на странице 404: привлечение внимания пользователей",
       img: "post-01.jpg",
       excerpt:
         "Страница 404 (страница не найдена) - это страница, которая отображается, когда пользователь пытается получить доступ к странице...",
-      href: "#",
       date: "12.09.2023",
       comments: "1",
     },
     {
+      id: 2,
       title: "lfjgljg",
       img: "post-01.jpg",
       excerpt: "Страница 404 (страница не найдена)",
-      href: "#",
       date: "15.09.2023",
       comments: "2",
     },
   ];
+  const titles = blogCard.map((card) => card.title);
+  
   return (
     <div className="blog container2">
-      <Title  text="Блог" />
+      <Title>Блог</Title>
       {/* <h3 className="blog__subtitle">
         Добро пожаловать в мой блог! Здесь вы найдете информацию о моей работе в
         области фронтенд-разработки. Буду рада поделиться с вами своим опытом и
@@ -34,7 +38,7 @@ export default function Blog() {
       </h3> */}
 
       {blogCard.map((item, index) => (
-        <a href="#" className="post" key={index}>
+        <Link href={`/blog/${item.title}`} className="post" key={index}>
           <Image src={item.img} alt="Картинка" width={314} height={289} />
           <div className="post__content">
             <h3 className="post__title">{item.title}</h3>
@@ -59,7 +63,7 @@ export default function Blog() {
               </span>
             </div>
           </div>
-        </a>
+        </Link>
       ))}
     </div>
   );

@@ -50,7 +50,7 @@ export default function Home() {
   ];
   return (
     <div className="container">
-      <Title text="мои проекты" />
+      <Title>мои проекты</Title>
       <div className="project">
         {postData.map((item, index) => (
           <div className="project__wrapper" key={index}>
