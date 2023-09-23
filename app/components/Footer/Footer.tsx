@@ -1,5 +1,4 @@
 import "./Footer.scss";
-// import Logo from "../logo/Logo";
 import Social from "../Social/Social";
 import Nav from "../Nav/Nav";
 
@@ -7,7 +6,6 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        {/* <Logo isWhite={true}/> */}
         <Social />
         <Nav />
       </div>
