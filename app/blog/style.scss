@@ -2,17 +2,6 @@
     h1 {
       padding-bottom: clamp(40px, 40px + (80 - 40) * ((100vw - 320px) / (1358 - 320)), 80px);
     }
-    // &__subtitle {
-    //     text-align: center;
-    //     font-size: clamp(14px, 14px + (20 - 14) * ((100vw - 320px) / (1358 - 320)), 20px);
-    //     padding: 0 60px 60px;
-    //     @media (max-width: 992px){
-    //            padding: 0 10px 30px;
-    //     }
-    //     @media (max-width: 767px){
-    //          padding: 0 10px 0px;
-    //     }
-    // }
 }
 .post {
     display: flex;
@@ -52,7 +41,7 @@
             padding-top: 10px;
         }
     }
-    &__excerpt {
+    &__text {
         font-weight: 500;
         font-size: 24px;
         font-size: clamp(16px, 16px + (24 - 16) * ((100vw - 320px) / (1358 - 320)), 24px);
