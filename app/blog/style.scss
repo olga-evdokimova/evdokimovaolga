@@ -2,8 +2,7 @@
     h1 {
       padding-bottom: clamp(40px, 40px + (80 - 40) * ((100vw - 320px) / (1358 - 320)), 80px);
     }
-}
-.post {
+    &-post {
     display: flex;
     border-radius: 9px;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -73,4 +72,5 @@
             }
         }
     }
+}
 }

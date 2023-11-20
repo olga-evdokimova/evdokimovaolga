@@ -2,41 +2,23 @@ import "./style.scss";
 import Title from "../components/Title/Title";
 import Image from "next/image";
 import Link from "next/link";
+import { posts } from "@/api/api";
 
 
 export default function Blog() {
-  const blogCard = [
-    {
-      id: 1,
-      title: "Lorem ipsum",
-      img: "post-01.jpg",
-      text: "Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития...",
-      date: "12.09.2023",
-      comments: "1",
-    },
-    {
-      id: 2,
-      title: "Lorem ipsum классический текст-рыба",
-      img: "post-01.jpg",
-      text: "Прародителем текста-рыбы является известный (Lorem Ipsum) — латинский текст",
-      date: "15.09.2023",
-      comments: "2",
-    },
-  ];
- 
   return (
     <div className="blog container2">
       <Title>Блог</Title>
-      {blogCard.map((item, index) => (
-        <Link href={`/blog/${item.title}`} className="post" key={index}>
-          <Image src={item.img} alt="Картинка" width={314} height={289} />
-          <div className="post__content">
-            <h3 className="post__title">{item.title}</h3>
-            <p className="post__text">{item.text}</p>
-            <div className="post__info">
-              <span className="post__info-date">{item.date}</span>
-              <span className="post__info-comments">
-                {item.comments}
+      {posts.map((post, index) => (
+        <Link href={`/blog/${post.slug}`} className="blog-post" key={index}>
+          <Image src={post.image} alt="Картинка" width={314} height={289} />
+          <div className="blog-post__content">
+            <h3 className="blog-post__title">{post.title}</h3>
+            <p className="post__text">{post.text}</p>
+            <div className="blog-post__info">
+              <span className="blog-post__info-date">{post.date}</span>
+              <span className="blog-post__info-comments">
+                {/* {post.comments} */}
                 <svg
                   width="24"
                   height="22"

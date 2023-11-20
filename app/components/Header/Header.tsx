@@ -5,7 +5,7 @@ import Nav from "../Nav/Nav";
 export default function Header() {
   return (
     <header className="header container">
-      <Logo isWhite={false} />
+      <Logo />
       <Nav />
     </header>
   );
