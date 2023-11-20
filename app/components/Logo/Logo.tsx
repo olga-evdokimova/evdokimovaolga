@@ -6,7 +6,7 @@ export default function Logo () {
     <div className="logo">
       <Link href={"/"} className="logo__link">
         <div className="logo__text">
-          Евдокимова&nbsp;Ольга<span>Frontend-разработчик</span>
+          Евдокимова&nbsp;Ольга
         </div>
       </Link>
     </div>
