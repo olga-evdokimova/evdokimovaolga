@@ -8,7 +8,7 @@ export default function Home() {
     {
       id: 1,
       title: "sifoxtech.com",
-      img: "project-06.jpg",
+      img: "project-07.png",
       text: "Сайт компании SiFox Technologies. ",
       href: "https://www.sifoxtech.com/",
     },
